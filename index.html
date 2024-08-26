@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+    .contenido_cabeza {
+      max-width: 2000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+    .banner {
+      background-image: url("tienda.jpg");
+      height: 60rem;
+      background-size: cover;
+      background-position: center;
+    }
+    .cabeza {
+      padding: 25px 50px;
+      background-color: #3fa3f4;
+    }
+    .navegación ul li {
+      position: relative;
+      float: right;
+    }
+    .navegación ul li a {
+      font-size: 18px;
+      padding: 20px;
+      color: #ffffff;
+      display: block;
+    }
+    .navegación ul li a:hover {
+      color: #a7a7a7;
+    }
+    body {
+      margin: 0 auto;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    img {
+      max-width: 100%;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      width: 850px;
+      margin: 0 auto;
+    }
+    .item1 {
+      border-radius: 10px;
+      background-color: #78c2ff;
+      object-fit: cover;
+    }
+    .item1:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .item1 img {
+      width: 100%;
+      height: 300px;
+    }
+    .boton {
+      border: none;
+      background: none;
+      background-color: #3fa3f4;
+      color: #ffffff;
+      padding: 15px 10px;
+      cursor: pointer;
+    }
+    .boton:hover {
+      background-color: #00569c;
+    }
+    .info1 {
+      padding: 15px 30px;
+      line-height: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+    div {
+      text-align: center;
+      margin: 0 auto;
+      align-items: center;
+      align-content: center;
+    }
+    h1 {
+      font-size: 65px;
+    }
+    .descripcion {
+      width: 65rem;
+      margin: 0 auto;
+      font-size: 35px;
+    }
+  </style>
+
+  <header>
+    <div class="cabeza">
+      <div class="contenido_cabeza">
+        <img src="terabyte logo.png" alt="logo" width="210" height="70" />
+        <nav class="navegación">
+          <ul>
+            <li><a href="contacto.html">Contáctanos</a></li>
+            <li><a href="productos.html">Productos </a></li>
+            <li><a href="index.html">Inicio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="todo">
+      <div class="cuerpo">
+        <section class="banner"></section>
+        <br />
+        <h1>BIENVENIDO A TERABYTE</h1>
+        <br />
+        <br />
+        <p class="descripcion">
+          En esta tienda encontrarás lo último en tecnología y de las marcas más
+          conocidas (Huawei, Samsung, LG, EPSON, HP y muchas más). Tenemos desde
+          celulares hasta computadoras ¿Buscas algo que no puedes econtrar?
+          ¡Aquí lo tenemos!
+        </p>
+        <br />
+        <br />
+        <br />
+        <h1>Productos</h1>
+      </div>
+      <br />
+      <br />
+      <div class="container">
+        <div class="item1">
+          <figure>
+            <img src="audifonos_sony.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Sony Audifonos Bluetooth 5.2 Wireless 50hrs WH-CH520</h2>
+            <p class="price">s/.260</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="audifonos_sony.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Sony Audifonos Bluetooth 5.2 Wireless 50hrs WH-CH520</h2>
+            <p class="price">s/.260</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="audifonos_sony.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Sony Audifonos Bluetooth 5.2 Wireless 50hrs WH-CH520</h2>
+            <p class="price">s/.260</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="audifonos_sony.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Sony Audifonos Bluetooth 5.2 Wireless 50hrs WH-CH520</h2>
+            <p class="price">s/.260</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="audifonos_sony.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Sony Audifonos Bluetooth 5.2 Wireless 50hrs WH-CH520</h2>
+            <p class="price">s/.260</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="audifonos_sony.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Sony Audifonos Bluetooth 5.2 Wireless 50hrs WH-CH520</h2>
+            <p class="price">s/.260</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div>
+        <h1>Acerca de nosotros</h1>
+        <br />
+        <p class="descripcion">
+          Terabyte fue fundada en 2017. Nuestro objetivo es ofrecer a nuestros
+          clientes lo último en tecnología. Tenemos productos de distintas
+          marcas y precios para la accesibilidada de todos, así como accesorios
+          para complementar tus productos.
+        </p>
+      </div>
+      <div>
+        <br />
+        <br />
+        <img src="ubicacion.png" alt="ubi" />
+        <p>Nos ubicamos en Av. Petit Thouars 5356, Miraflores 15074</p>
+      </div>
+    </div>
+  </body>
+</html>

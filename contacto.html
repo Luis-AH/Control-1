@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+    .contenido_cabeza {
+      max-width: 2000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+    .banner {
+      background-image: url("tienda.jpg");
+      height: 60rem;
+      background-size: cover;
+      background-position: center;
+    }
+    .cabeza {
+      padding: 25px 50px;
+      background-color: #3fa3f4;
+    }
+    .navegación ul li {
+      position: relative;
+      float: right;
+    }
+    .navegación ul li a {
+      font-size: 18px;
+      padding: 20px;
+      color: #ffffff;
+      display: block;
+    }
+    .navegación ul li a:hover {
+      color: #a7a7a7;
+    }
+    body {
+      margin: 0 auto;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      width: 850px;
+      margin: 0 auto;
+    }
+    .boton {
+      border: none;
+      background: none;
+      background-color: #3fa3f4;
+      color: #ffffff;
+      padding: 15px 10px;
+      cursor: pointer;
+    }
+    .boton:hover {
+      background-color: #00569c;
+    }
+    .info1 {
+      padding: 15px 30px;
+      line-height: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+    div {
+      text-align: center;
+      margin: 0 auto;
+      align-items: center;
+      align-content: center;
+    }
+    h1 {
+      font-size: 65px;
+    }
+    .titulo {
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 25px;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #3f3f3f;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+    }
+    .titulo::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background-color: #3fa3f4;
+      margin: 8px auto 0;
+    }
+
+    .Boton {
+      background: #3fa3f4;
+      color: #ffffff;
+      font-size: 20px;
+      border: 0px groove #000000;
+      line-height: 30px;
+      width: 300px;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #ffffff;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      border-radius: 15px;
+    }
+    .Boton:hover {
+      background: #18619c;
+    }
+
+    .bar1 {
+      height: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 300px;
+      margin: 0 auto;
+    }
+    .bar1 input {
+      border: none;
+      height: 100%;
+      width: 300px;
+      border-radius: 0;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 15px;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #3f3f3f;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      border-radius: 15px;
+      background-color: #ecececc7;
+    }
+    .bar2 {
+      height: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 300px;
+      margin: 0 auto;
+    }
+    .bar2 input {
+      border: none;
+      height: 100%;
+      width: 300px;
+      border-radius: 0;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 15px;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #3f3f3f;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      border-radius: 15px;
+      background-color: #ecececc7;
+    }
+    .bar3 {
+      height: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 300px;
+      margin: 0 auto;
+    }
+    .bar3 input {
+      border: none;
+      height: 100%;
+      width: 300px;
+      border-radius: 0;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 15px;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #3f3f3f;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      border-radius: 15px;
+      background-color: #ecececc7;
+    }
+    .bar4 {
+      height: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 300px;
+      margin: 0 auto;
+    }
+    .bar4 textarea {
+      border: none;
+      height: 150px;
+      width: 100%;
+      border-radius: 0;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 15px;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #3f3f3f;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      border-radius: 15px;
+      background-color: #ecececc7;
+    }
+  </style>
+
+  <header>
+    <div class="cabeza">
+      <div class="contenido_cabeza">
+        <img src="terabyte logo.png" alt="logo" width="210" height="70" />
+        <nav class="navegación">
+          <ul>
+            <li><a href="contacto.html">Contáctanos</a></li>
+            <li><a href="productos.html">Productos </a></li>
+            <li><a href="index.html">Inicio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="todo">
+      <div class="titulo">
+        <h1>¡CONTACTANOS!</h1>
+      </div>
+      <br />
+      <form class="bar1">
+        <input type="text" placeholder=" Your Name" /> <br />
+      </form>
+      <br />
+      <form class="bar2">
+        <input type="text" placeholder="  Your Email" />
+      </form>
+      <br />
+      <form class="bar3">
+        <input type="text" placeholder="  Phone" />
+      </form>
+      <br />
+      <form class="bar4">
+        <textarea type="text" placeholder="  Message"></textarea>
+      </form>
+      <br />
+      <button class="Boton">Send</button>
+    </div>
+  </body>
+</html>

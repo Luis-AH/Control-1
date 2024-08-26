@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+    .contenido_cabeza {
+      max-width: 2000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+    .cabeza {
+      padding: 25px 50px;
+      background-color: #3fa3f4;
+    }
+    .navegación ul li {
+      position: relative;
+      float: right;
+    }
+    .navegación ul li a {
+      font-size: 18px;
+      padding: 20px;
+      color: #ffffff;
+      display: block;
+    }
+    .navegación ul li a:hover {
+      color: #a7a7a7;
+    }
+    body {
+      margin: 0 auto;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    img {
+      max-width: 100%;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 2fr);
+      gap: 25px;
+      width: 850px;
+      margin: 0 auto;
+    }
+    .item1 {
+      border-radius: 10px;
+      background-color: #78c2ff;
+      object-fit: cover;
+      width: 300px;
+    }
+    .item1:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .item1 img {
+      width: 100%;
+      height: 300px;
+    }
+    .boton {
+      border: none;
+      background: none;
+      background-color: #3fa3f4;
+      color: #ffffff;
+      padding: 15px 10px;
+      cursor: pointer;
+    }
+    .boton:hover {
+      background-color: #00569c;
+    }
+    .info1 {
+      padding: 15px 30px;
+      line-height: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    div {
+      text-align: center;
+      margin: 0 auto;
+      align-items: center;
+      align-content: center;
+    }
+    h1 {
+      font-size: 65px;
+    }
+    .descripcion {
+      width: 65rem;
+      margin: 0 auto;
+      font-size: 35px;
+    }
+    h4{
+      font-size: 15px;
+    }
+    .price{
+      font-size: 30px;
+    }
+    input{
+      border: none;
+      height: 100%;
+      width: 1000px;
+      padding: 15px;
+      border-radius: 0;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 25px;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #3f3f3f;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      background-color: #ecececc7;
+      border-radius: 15px;
+    }
+    .des{
+      font-size: 25px;
+    }
+  </style>
+  <header>
+    <div class="cabeza">
+      <div class="contenido_cabeza">
+        <img src="terabyte logo.png" alt="logo" width="210" height="70" />
+        <nav class="navegación">
+          <ul>
+            <li><a href="contacto.html">Contáctanos</a></li>
+            <li><a href="productos.html">Productos </a></li>
+            <li><a href="index.html">Inicio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="todo">
+      <div class="busqueda">
+        <br />
+        <br />
+        <br />
+        <h1> Nuestros Productos</h1>
+        <br />
+        <p class="des"><strong>Busca lo que necesites</strong></p>
+        <br />
+        <p><input type="text" placeholder="Busca" /></p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="container">
+        <div class="item1">
+          <figure>
+            <img src="audifonos_sony.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Sony Audifonos Bluetooth 5.2 </h2>
+            <p> Marca: Sony</p>
+            <p> Modelo: WH-CH520</p>
+            <p> Color: Negro </p>
+            <p> Conexión: Bluetooth</p>
+            <p class="price">s/.260</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="iPhone.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>iPhone 13 128gb</h2>
+            <p> Marca: Apple</p>
+            <p> Tamaño: 6.1 pulgadas</p>
+            <p> Bluetooth: sí </p>
+            <p> Garantía: 12 meses</p>
+            <p class="price">s/.2,999</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="NotePad.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Tablet P12 8GB 256GB Wifi6 Case 12.7"</h2>
+            <p> Marca: Lenovo</p>
+            <p> Tamaño: 12.7 pulgadas</p>
+            <p> Modelo: TB370FU </p>
+            <p> Cámara principal: 13MP</p>
+            <p class="price">s/.1,699</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="EPSON.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Sony Audifonos Bluetooth 5.2 Wireless 50hrs WH-CH520</h2>
+            <p> Marca: Sony</p>
+            <p> Modelo: WH-CH520</p>
+            <p> Color: Negro </p>
+            <p> Conexión: Bluetooth</p>
+            <p class="price">s/.260</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="Galaxya05S.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Sony Audifonos Bluetooth 5.2 Wireless 50hrs WH-CH520</h2>
+            <p> Marca: Sony</p>
+            <p> Modelo: WH-CH520</p>
+            <p> Color: Negro </p>
+            <p> Conexión: Bluetooth</p>
+            <p class="price">s/.260</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="Airpod.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Apple AirPods Pro Magsafe 2ª gen USB C 2023</h2>
+            <p> Marca: Apple</p>
+            <p> Modelo: MTJV3AMA</p>
+            <p> Color: Blanco </p>
+            <p> Conexión: Bluetooth</p>
+            <p class="price">s/.899</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="TV.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Televisor JVC 43" FHD Google TV </h2>
+            <p> Marca: JVC</p>
+            <p> Modelo: LT-43KB338</p>
+            <p> Tamaño: 43 pulgadas</p>
+            <p> Resolución: Full HD</p>
+            <p class="price">s/.1,299</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="Laptop.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Gamer Asus Amd Ryzen 5 Rtx 2050 8Gb Ram 512Gb Ssd</h2>
+            <p> Marca: ASUS</p>
+            <p> Memoria RAM: 8GB </p>
+            <p> Tamaño: 15.6 pulgadas </p>
+            <p> Almacenamiento: 512GB</p>
+            <p class="price">s/.2,899</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="QLED.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Televisor Samsung 55" QLED 4K Tizen Os Smart</h2>
+            <p> Marca: Sony</p>
+            <p> Modelo: QN55Q60DAGXPE</p>
+            <p> Tamaño: 55 pulgadas </p>
+            <p> Color: Negro</p>
+            <p class="price">s/.1,999</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="Audifonos.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Audífonos Gamer Redragon Zeus X RGB</h2>
+            <p> Marca: Redragon</p>
+            <p> Modelo: H510-W Zeus X</p>
+            <p> Color: Negro </p>
+            <p> Conexión: USB-C</p>
+            <p class="price">s/.275</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="item1">
+          <figure>
+            <img src="Celu.jpg" alt="producto" />
+          </figure>
+          <div class="info1">
+            <h2>Celular Honor X8b 8GB 256GB.</h2>
+            <p> Marca: Honor</p>
+            <p> Almacenamiento: 256GB</p>
+            <p> Tamaño: 6.7 pulgadas </p>
+            <p> Memoria Ram: 8GB</p>
+            <p class="price">s/.260</p>
+            <button class="boton">Comprar ahora</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+  </body>
+</html>
